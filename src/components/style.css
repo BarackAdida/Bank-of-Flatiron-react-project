@@ -1,0 +1,10 @@
+#div1 {
+    border: 1px solid #CCD1D1;
+    justify-content: space-between;
+}
+
+#div1 button {
+    background-color: transparent;
+    border-radius: 48%;
+    border-color: #CCD1D1;
+}
