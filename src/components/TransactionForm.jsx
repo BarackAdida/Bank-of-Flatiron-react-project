@@ -49,7 +49,7 @@ const TransactionForm = ({ onSubmit }) => {
         value={formData.category}
         onChange={handleChange}
       >
-        <option value="">Category</option>
+        <option value="">Entertainment</option>
         <option value="Medical Bills">Medical Bills</option>
         <option value="Recreation">Recreation</option>
         <option value="Food">Food</option>
