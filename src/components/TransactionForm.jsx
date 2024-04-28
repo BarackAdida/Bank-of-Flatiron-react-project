@@ -28,19 +28,45 @@ const TransactionForm = ({ onSubmit }) => {
   };
 
   return (
-    <div>
-        <div id='div1'>
-        <form onSubmit={handleSubmit}>
-            <input type="date" name="date" placeholder="Date" value={formData.date} onChange={handleChange}/>
-            <input type="text" name="description" placeholder="Description" value={formData.description} onChange={handleChange} />
-            <input type="text" name="description" placeholder="Cartegory"  value={formData.description} onChange={handleChange} />
-            <input type="number" name="amount" placeholder="Amount" value={formData.amount} onChange={handleChange}  />
-        </form>  
+    <form onSubmit={handleSubmit}>
+      <div id='formDiv'>
+      <input
+        type="date"
+        name="date"
+        placeholder="Date"
+        value={formData.date}
+        onChange={handleChange}
+      />
+      <input
+        type="text"
+        name="description"
+        placeholder="Description"
+        value={formData.description}
+        onChange={handleChange}
+      />
+      <select
+        name="category"
+        value={formData.category}
+        onChange={handleChange}
+      >
+        <option value="">Category</option>
+        <option value="Medical Bills">Medical Bills</option>
+        <option value="Recreation">Recreation</option>
+        <option value="Food">Food</option>
+        <option value="Shopping">Shopping</option>
+        <option value="Transportation">Transportation</option>
+      </select>
+      <input
+        type="number"
+        name="amount"
+        placeholder="Amount"
+        value={formData.amount}
+        onChange={handleChange}
+      />
       </div>
-      <div id='divbutton'>
-        <button type="submit">Add Transaction</button>
-      </div>
-  </div>
+      <div id="addButton"><button type="submit">Add Transaction</button></div>
+     
+    </form>
   );
 };
 
