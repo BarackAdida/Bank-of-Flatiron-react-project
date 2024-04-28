@@ -1,10 +1,70 @@
 #div1 {
     border: 1px solid #CCD1D1;
     justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+
+#div1 input {
+    width: 1200px;
+    text-decoration: none;
+}
+
+#headdiv {
+    background-color: blueviolet;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    border-radius: 4px;
+}
+
+h3 {
+    color: white;
+    font-weight: bolder;
+    text-align: center;
 }
 
 #div1 button {
     background-color: transparent;
     border-radius: 48%;
     border-color: #CCD1D1;
+    margin-left: max;
+}
+
+#div1 input {
+    border-color: transparent;
+}
+
+#div2 {
+    border: 1px solid #CCD1D1;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+}
+
+#div2 input{
+    margin-right: 5px;
+    text-align: center;
+    width: 300px;
+}
+
+#buttondiv {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+table {
+    margin-top: 5px;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    text-align: center;
+    width: 1255px;
+}
+
+table, th, td {
+    border: 1px solid #CCD1D1;
+    border-collapse: collapse;
 }
